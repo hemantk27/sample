@@ -1,0 +1,1 @@
+{   "job_name": "FINANCE_ETL",   "job_type": "JOB",   "script": "sh run_etl.sh",   "calendar": "DAILY_CAL",   "dependencies": [     "LOAD_DIM"   ],   "owner": "finance",   "application": "FINANCE_APP",   "runtime": {     "timezone": "UTC",     "start_time": "02:00"   },   "conditions": {     "on_success": "PROCEED",     "on_failure": "STOP"   } }
